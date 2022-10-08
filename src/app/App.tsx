@@ -3,6 +3,8 @@ import "./styles/index.scss";
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTheme } from "app/providers/ThemeProviders";
 import { AppRouter } from "./providers/router";
+import { Header } from "widgets/Header";
+
 
 
 const App = () => {
@@ -11,11 +13,10 @@ const App = () => {
     return (
         <div>
             <div className={classNames("app", {}, [theme])}>
-                <button onClick={toogleTheme}>Toogle Theme</button>
-                <Link to={"/"}>Главная</Link>
-                <Link to={"/about"}>О нас</Link>
+                <Header />
             </div>
             <AppRouter />
+            <button onClick={toogleTheme}>Toogle Theme</button>
         </div>
     );
 };

@@ -8,7 +8,7 @@ import { Header } from "widgets/Header";
 
 
 const App = () => {
-    const { theme, toogleTheme } = useTheme();
+    const { theme } = useTheme();
 
     return (
         <div>
@@ -16,7 +16,6 @@ const App = () => {
                 <Header />
             </div>
             <AppRouter />
-            <button onClick={toogleTheme}>Toogle Theme</button>
         </div>
     );
 };

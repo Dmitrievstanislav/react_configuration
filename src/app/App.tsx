@@ -4,7 +4,7 @@ import { useTheme } from "app/providers/ThemeProviders";
 import { AppRouter } from "./providers/router";
 import { Header } from "widgets/Header";
 import { Sidebar } from "widgets/Sidebar";
-
+import { Suspense } from "react";
 
 
 const App = () => {
@@ -12,11 +12,13 @@ const App = () => {
 
     return (
         <div className={classNames("app", {}, [theme])}>
-            <Header />
-            <div className="content-page">
-                <Sidebar />
-                <AppRouter />
-            </div>
+            <Suspense fallback="">
+                <Header />
+                <div className="content-page">
+                    <Sidebar />
+                    <AppRouter />
+                </div>             
+            </Suspense>
         </div>
     );
 };

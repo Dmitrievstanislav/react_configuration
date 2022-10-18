@@ -1,21 +1,24 @@
-.Sidebar {
-    height: calc(100vh - var(--sidebar-height));
-    width: var(--sidebar-width);
-    background: var(--bg-color-inverted);
-    position: relative;
-    transition: width 0.3s;
+.sidebar {
+  height: calc(100vh - var(--sidebar-height));
+  width: var(--sidebar-width);
+  background: var(--bg-color-inverted);
+  position: relative;
+  transition: width 0.3s;
 }
+
 .collapsed {
-    width: var(--sidebar-width-collapsed);
+  width: var(--sidebar-width-collapsed);
 }
+
 .switchers {
-    position: absolute;
-    bottom: var(--padding-4);
-    padding: var(--padding-4);
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  position: absolute;
+  bottom: var(--padding-4);
+  padding: var(--padding-4);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
 .lang {
-    margin-left: var(--padding-4);
+  margin-left: var(--padding-4);
 }

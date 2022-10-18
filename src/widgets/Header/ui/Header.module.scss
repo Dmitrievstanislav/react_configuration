@@ -1,14 +1,16 @@
-.Header {
-    width: 100%;
-    height: var(--sidebar-height);
-    background: var(--bg-color-inverted);
-    display: flex;
-    align-items: center;
-    padding-right: 1.5rem;
+.header {
+  width: 100%;
+  height: var(--sidebar-height);
+  background: var(--bg-color-inverted);
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
 }
+
 .links {
-    margin-left: auto;
+  margin-left: auto;
 }
+
 .mainLink {
-    margin-right: 1.5rem;  
+  margin-right: 1.5rem;
 }

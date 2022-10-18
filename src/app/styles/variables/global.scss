@@ -1,18 +1,13 @@
 :root {
-    --font-family-main: Arial, Helvetica, sans-serif;
-
-    --font-size-m: 16px;
-    --font-line-m: 24px;
-    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-
-    --font-size-l: 24px;
-    --font-line-l: 32px; 
-    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-
-    --sidebar-height: 3rem;
-    --sidebar-width: 16rem;
-    --sidebar-width-collapsed: 5rem;
-    --padding-4: 1rem;
-
-
+  --font-family-main: arial, helvetica, sans-serif;
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --sidebar-height: 3rem;
+  --sidebar-width: 16rem;
+  --sidebar-width-collapsed: 5rem;
+  --padding-4: 1rem;
 }

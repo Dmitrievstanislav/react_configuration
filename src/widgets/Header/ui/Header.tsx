@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export const Header = ({className}: HeaderProps) => {
   return (
-    <header className={classNames(cls.Header, {}, [className])}>
+    <header className={classNames(cls.header, {}, [className])}>
       <nav className={cls.links}>
         <AppLink
           theme={AppLinkTheme.SECONDARY}

@@ -1,11 +1,4 @@
 .AppLink {
-  color: var(--primary-color);
-}
-
-.primary {
-  color: var(--primary-color);
-}
-
-.secondary {
-  color: var(--secondary-color-inverted);
+  color: var(--on-surface-color);
+  text-decoration: none;
 }

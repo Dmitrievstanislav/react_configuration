@@ -27,7 +27,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'require-jsdoc': 0,
     'no-unused-vars': 'warn',
-    'max-len': ['error', {'ignoreComments': true}],
+    'max-len': ['error', {'ignoreComments': true, 'code': 120}],
   },
   'globals': {
     '__IS_DEV__': true,

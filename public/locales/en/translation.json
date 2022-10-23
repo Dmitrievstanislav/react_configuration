@@ -3,5 +3,9 @@
     "Переключить": "Toogle",
     "Главная": "Main",
     "О нас": "About us",
-    "Страница не найдена": "Page not found"
+    "Страница не найдена": "Page not found",
+    "Произошла непредвиденная ошибка": "Something went wrong",
+    "Обновить страницу": "Reload page",
+    "Сделать ошибку": "Make an error"
+
 }

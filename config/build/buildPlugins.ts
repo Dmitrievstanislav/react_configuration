@@ -19,9 +19,9 @@ export function buildPlugins({paths, isDev}: BuildOptions)
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ];
   if (isDev) {
-    plugins.push(new webpack.HotModuleReplacementPlugin());
     plugins.push(new ReactRefreshWebpackPlugin({
       overlay: false,
     }));

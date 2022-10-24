@@ -4,7 +4,6 @@ import {Button, ThemeButton} from './Button';
 
 describe('Button', () => {
   test('Has text', () => {
-    // eslint-disable-next-line i18next/no-literal-string
     render(<Button>test</Button>);
     expect(screen.getByText(/test/i)).toBeInTheDocument();
   });

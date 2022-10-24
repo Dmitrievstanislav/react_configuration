@@ -1,6 +1,7 @@
 import {t} from 'i18next';
 import {useEffect, useState} from 'react';
-import {Button} from 'shared/ui/Button/Button';
+import {Button} from 'shared/ui/Button';
+
 
 // Component for testing errors
 export const BugButton = () => {

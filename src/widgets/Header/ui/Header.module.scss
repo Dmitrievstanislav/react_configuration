@@ -11,6 +11,10 @@
   margin-left: auto;
 }
 
-.mainLink {
-  margin-right: 1.5rem;
+.ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 0 0;
+  list-style-type: none;
 }

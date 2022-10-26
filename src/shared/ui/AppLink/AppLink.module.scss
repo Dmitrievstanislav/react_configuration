@@ -1,4 +1,10 @@
 .AppLink {
   color: var(--on-surface-color);
   text-decoration: none;
+  padding: var(--padding-2) var(--padding-4);
+  border-radius: var(--rounded-md);
+
+  &:hover {
+    background-color: var(--surface-4);
+  }
 }

@@ -12,9 +12,9 @@ const AppRouter = () => {
             key={path}
             path={path}
             element={(
-              <div className="pageWrapper">
+              <main className="pageWrapper">
                 {element}
-              </div>
+              </main>
             )}
           />
         ))}

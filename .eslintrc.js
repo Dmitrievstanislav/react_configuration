@@ -28,6 +28,7 @@ module.exports = {
     'require-jsdoc': 0,
     'no-unused-vars': 'warn',
     'max-len': ['error', {'ignoreComments': true, 'code': 120}],
+    'new-cap': ['error', {'capIsNew': false}],
   },
   'globals': {
     '__IS_DEV__': true,

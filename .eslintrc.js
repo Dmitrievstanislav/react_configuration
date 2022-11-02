@@ -27,8 +27,18 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'require-jsdoc': 0,
     'no-unused-vars': 'warn',
+    'max-len': ['error', {'ignoreComments': true, 'code': 120}],
+    'new-cap': ['error', {'capIsNew': false}],
   },
   'globals': {
     '__IS_DEV__': true,
   },
+  'overrides': [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };

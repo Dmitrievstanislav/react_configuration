@@ -13,12 +13,22 @@ export const Header = ({className}: HeaderProps) => {
   return (
     <header className={classNames(cls.header, {}, [className])}>
       <nav className={cls.links}>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          className={cls.mainLink}to={'/'}>{t('Главная')}</AppLink>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          to={'/about'}>{t('О нас')}</AppLink>
+        <ul className={cls.ul}>
+          <li>
+            <AppLink
+              theme={AppLinkTheme.SECONDARY}
+              to={'/'}>{t('Главная')}
+            </AppLink>
+          </li>
+          <li>
+            <AppLink
+              theme={AppLinkTheme.SECONDARY}
+              to={'/about'}>{t('О нас')}
+            </AppLink>
+          </li>
+        </ul>
+
+
       </nav>
     </header>
   );

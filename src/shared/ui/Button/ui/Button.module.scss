@@ -1,0 +1,20 @@
+.button {
+  cursor: pointer;
+  color: var(--on-bg-color);
+  padding: var(--padding-2) var(--padding-4);
+  border-radius: var(--rounded-md);
+
+  &:hover {
+    background-color: var(--surface-4);
+  }
+}
+
+.clear {
+  border: none;
+  background: none;
+}
+
+.outline {
+  border: 2px solid var(--on-bg-color);
+  background: none;
+}

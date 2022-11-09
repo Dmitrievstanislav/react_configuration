@@ -34,7 +34,7 @@ run_integration_tests:
     - npm run build:prod
     - npm run storybook:build
   script:
-    - npm run test:ui:ci
+    - npx loki test
 
 build_image:
   only:

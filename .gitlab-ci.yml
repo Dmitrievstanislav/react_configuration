@@ -34,7 +34,7 @@ run_integration_tests:
     - npm run build:prod
     - npm run storybook:build
   script:
-    - npx loki --requireReference --reactUri file:./storybook-static
+    - npm run test:ui:ci
 
 build_image:
   only:

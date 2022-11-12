@@ -1,4 +1,7 @@
 image: local-docker
+default:
+  tags:
+    - local-docker
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH != "main" && $CI_PIPELINE_SOURCE != "merge_request_event"
@@ -28,8 +31,6 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
-  tags:
-   - local-docker
   stage: test
   before_script:
     - npm install

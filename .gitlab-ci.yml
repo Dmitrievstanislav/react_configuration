@@ -1,4 +1,6 @@
-image: node:17.4.0-alpine
+tag:
+   - locsal
+   - linux
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH != "main" && $CI_PIPELINE_SOURCE != "merge_request_event"

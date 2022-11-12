@@ -1,6 +1,4 @@
-tag:
-   - local
-   - linux
+image: node:17.4.0-alpine
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH != "main" && $CI_PIPELINE_SOURCE != "merge_request_event"
@@ -30,6 +28,9 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
+  tag:
+   - local
+   - linux
   stage: test
   before_script:
     - npm install

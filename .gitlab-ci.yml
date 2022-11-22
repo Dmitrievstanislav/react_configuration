@@ -29,6 +29,9 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
+  tags:
+    - local
+    - ubuntu
   stage: test
   before_script:
     - npm install

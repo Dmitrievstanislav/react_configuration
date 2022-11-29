@@ -35,7 +35,6 @@ run_integration_tests:
     - shell
   stage: test
   before_script:
-    - sudo apt update
     - sudo apt install nodejs@17.4.0
     - sudo apt install npm@8.3.1
     - npm install

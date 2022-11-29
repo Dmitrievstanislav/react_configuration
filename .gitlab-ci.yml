@@ -29,14 +29,16 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
+  image: docker:latest
   services:
-    - docker
+    - docker:dind
   stage: test
   before_script:
+    - docker run node:alpine
+  script:
     - npm install
     - npm run build:prod
     - npm run storybook:build
-  script:
     - npm run test:ui:ci
 
 build_image:

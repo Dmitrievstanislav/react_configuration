@@ -29,14 +29,8 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
-  tags:
-    - local
-    - docker
-    - shell
   stage: test
   before_script:
-    - nvm -v
-    - npm -v
     - npm install
     - npm run build:prod
     - npm run storybook:build

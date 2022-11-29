@@ -29,6 +29,8 @@ run_lint_tests:
     - npm run lint:scss
 
 run_integration_tests:
+  services:
+    - docker
   stage: test
   before_script:
     - npm install

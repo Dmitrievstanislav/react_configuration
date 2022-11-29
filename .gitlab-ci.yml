@@ -31,11 +31,11 @@ run_lint_tests:
 run_integration_tests:
   tags:
     - local
-    - ubuntu
-  services:
-    - docker:dind 
+    - docker
+    - shell
   stage: test
   before_script:
+    - docker info
     - npm install
     - npm run build:prod
     - npm run storybook:build

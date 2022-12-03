@@ -33,7 +33,7 @@
   </ol>
 </details>
 
-___
+
 ## About The Project
 
 I'm creating React boilerplate for production
@@ -64,7 +64,7 @@ Loki
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-___
+
 ## Getting Started
 
 You must have a running Ubuntu Linux system with shell access.
@@ -104,7 +104,6 @@ sudo systemctl status docker
 sudo systemctl enable --now docker
 ```
 
-___
 ### Installation
 
 1. Clone the repo
@@ -119,12 +118,12 @@ npm install
 ```sh
 npm start
 ```
-___
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-___
+
 ## Contact
 
 Stanislav Dmitriev -  - dmitrievartstation@gmail.com

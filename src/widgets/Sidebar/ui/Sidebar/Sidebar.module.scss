@@ -6,10 +6,6 @@
   transition: width 0.3s;
 }
 
-.collapsed {
-  width: var(--sidebar-width-collapsed);
-}
-
 .switchers {
   position: absolute;
   bottom: var(--padding-4);
@@ -17,4 +13,18 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+
+  .switchers {
+    flex-direction: column;
+  }
+}
+
+.collapseBtn {
+  position: absolute;
+  right: -40px;
+  bottom: var(--padding-8);
 }

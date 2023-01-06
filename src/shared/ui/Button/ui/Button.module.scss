@@ -1,12 +1,8 @@
 .button {
   cursor: pointer;
   color: var(--on-bg-color);
-  padding: var(--padding-2) var(--padding-4);
+  //padding: var(--padding-2) var(--padding-4);
   border-radius: var(--rounded-md);
-
-  &:hover {
-    background-color: var(--surface-4);
-  }
 }
 
 .clear {
@@ -27,6 +23,7 @@
 .onBackground {
   border: none;
   background-color: var(--on-surface);
+  color: var(--bg-color);
 }
 
 .square {

@@ -8,9 +8,12 @@
   --font-size-l: 1.5rem;
   --font-line-l: 2rem;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --font-size-xl: 2rem;
+  --font-line-xl: 2.5rem;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
   --sidebar-height: 3rem;
   --sidebar-width: 16rem;
-  --sidebar-width-collapsed: 5rem;
+  --sidebar-width-collapsed: 4.5rem;
   --padding-1: 0.25rem;
   --padding-2: 0.5rem;
   --padding-4: 1rem;
@@ -22,4 +25,5 @@
   --rounded-md: 0.375rem;
   --rounded-lg: 0.5rem;
   --rounded-xl: 0.75rem;
+  --icon-m: 2.5rem;
 }

@@ -13,7 +13,7 @@
   --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
   --sidebar-height: 3rem;
   --sidebar-width: 16rem;
-  --sidebar-width-collapsed: 4.5rem;
+  --sidebar-width-collapsed: 3.5rem;
   --padding-1: 0.25rem;
   --padding-2: 0.5rem;
   --padding-4: 1rem;
@@ -26,4 +26,6 @@
   --rounded-lg: 0.5rem;
   --rounded-xl: 0.75rem;
   --icon-m: 2.5rem;
+  --modal-z-index: 10;
+  --overlay-color: hsl(0deg 100% 0% / 60%);
 }

@@ -11,5 +11,9 @@
     "Темная тема": "Dark mode",
     "Светлая тема": "Light Mode",
     "Увеличить": "Increment",
-    "Уменьшить": "Decrement"
+    "Уменьшить": "Decrement",
+    "Авторизация": "Authorization",
+    "Войти": "Login",
+    "Имя или почта": "Name or email",
+    "Пароль": "Password"
 }

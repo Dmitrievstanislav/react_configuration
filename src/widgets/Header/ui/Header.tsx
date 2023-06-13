@@ -1,10 +1,9 @@
 /* eslint-disable i18next/no-literal-string */
+import {LoginModal} from 'features/AuthByUsername';
 import {useCallback, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {classNames} from 'shared/lib/classNames/classNames';
-import {AppLink, AppLinkTheme} from 'shared/ui/AppLink/AppLink';
 import {Button, ButtonTheme} from 'shared/ui/Button';
-import {Modal} from 'shared/ui/Modal';
 import cls from './Header.module.scss';
 
 
@@ -16,8 +15,11 @@ export const Header = ({className}: HeaderProps) => {
   const {t} = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
 
-  const onToggleModal = useCallback(() => {
-    setIsAuthModal((prev) => !prev);
+  const onCloseModal = useCallback(() => {
+    setIsAuthModal(false);
+  }, []);
+  const onShowModal = useCallback(() => {
+    setIsAuthModal(true);
   }, []);
 
   return (
@@ -28,16 +30,17 @@ export const Header = ({className}: HeaderProps) => {
             <Button
               theme={ButtonTheme.CLEAR}
               className={cls.item}
-              onClick={onToggleModal}
+              onClick={onShowModal}
             >
               {t('Войти')}
             </Button>
           </li>
         </ul>
       </nav>
-      <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-          We are looking for self-starter engineers with full-stack
-      </Modal>
+      <LoginModal
+        isOpen={isAuthModal}
+        onClose={onCloseModal}
+      />
     </header>
   );
 };

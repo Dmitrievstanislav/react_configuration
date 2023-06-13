@@ -1,0 +1,16 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  // margin: var(--padding-4) auto;
+}
+
+.loginBtn {
+  margin-top: var(--padding-8);
+}
+
+.titleInput {
+  margin-top: var(--padding-4);
+}
